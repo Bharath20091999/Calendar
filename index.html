@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.theme.css">
+</head>
+<body>
+  <h1>Welcome to jquery-ui</h1>
+  Start Date: <input type="text" name="" id="id1">
+  End Date: <input type="text" name="" id="id2">
+</body>
+<script src="jquery-ui\external\jquery\jquery.js" charset="utf-8"></script>
+<script src="jquery-ui\jquery-ui.js" charset="utf-8"></script>
+<script>
+  $('#id1').datepicker({
+    showOtherMonths:true,
+    changeYear:true,
+    changeMonth:true,
+    showWeek:true,
+    minDate: new Date(2017,5,1),
+    maxDate: new Date(2021,5,1),
+  });
+</script>
+<script>
+  $('#id2').datepicker({
+    showOtherMonths:true,
+    changeYear:true,
+    changeMonth:true,
+    showWeek:true,
+    minDate: new Date(2017,5,1),
+    maxDate: new Date(2021,5,1),
+  });
+</script>
+
+</html>
